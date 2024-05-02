@@ -15,4 +15,5 @@ func _process(delta):
 		current_time = spawn_rate
 		
 		var new_enemy = enemy.instance()
+		new_enemy.velocity = Vector2(0, -200)
 		add_child(new_enemy)
